@@ -1,4 +1,72 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #dadada;
+  background-color: lightgray;
+  font-family: sans-serif;
   font-size: 10px;
 }
+
+.container {
+  display: block;
+  text-align: center;
+}
+
+/* Header: Modern Luxury Travel */
+.emphasis {
+  display: block;
+  font-size: 16px;
+  height: 60px;
+  letter-spacing: 1.5px;
+  padding-top: 30px;
+  position: static;
+  text-transform: uppercase;
+}
+
+/* City images */
+.baku-image, .london-image, .madrid-image, .rome-image {
+  background-size: cover;
+  height: 200px;
+  margin-bottom: 10px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.preview-baku, .preview-london, .preview-madrid, .preview-rome {
+  background-size: cover;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* City names */
+.preview-baku h1, .preview-london h1, .preview-madrid h1, .preview-rome h1{
+  font-size: 22px;
+  left: 20px;
+  position: relative;
+  text-align: left;
+  font-family: serif;
+  top: 40px;
+}
+
+/* Two column tablet view */
+@media screen and (min-width: 575px){
+  .preview-baku, .preview-london, .preview-madrid, .preview-rome {
+    background-size: cover;
+    display: inline-block;
+    padding: 10px;
+    object-fit: cover;
+    width: 45%;
+    }
+  }
+
+/* Four column desktop view */
+  @media screen and (min-width: 991px){
+    .preview-baku, .preview-london, .preview-madrid, .preview-rome {
+      background-size: cover;
+      display: inline-block;
+      object-fit: cover;
+      padding: 10px;
+      width: 20%;
+      }
+    }
